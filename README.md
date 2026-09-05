@@ -10,14 +10,14 @@ Focus: Capabilities + Validation + Canonical Execution
 A small, intentionally simple application that preserves and demonstrates the capabilities available in the early public releases of the Agnara framework.
 
 ## Historical Significance
-Agnara Task Intelligence is Historical Reference Application #001 in the Agnara reference series. It preserves a reproducible example of building against the public `agnara==0.1.0a2` PyPI release.
+Agnara Task Intelligence is the first project in the Agnara Historical Reference Application series (Historical Reference Application #001). It preserves a reproducible example of building against the public `agnara==0.1.0a2` PyPI release.
 ```text
 Historical Reference Application: #001
 Application: Agnara Task Intelligence
 Application version: 0.1.0
 Agnara version: 0.1.0a2
 Python requirement: >=3.14
-Initially validated with: CPython 3.14.4
+Initially validated interpreter: CPython 3.14.4
 Agnara source: PyPI
 Primary capability: task_intelligence.analyze_task
 Primary interface: CLI
@@ -34,15 +34,14 @@ This reference application demonstrates the following core Agnara capabilities:
 - Completely transport-agnostic execution
 
 ## Architecture
-The application separates the human interface (CLI) from the business logic via the Agnara Runtime:
+The application separates the human interface (CLI) from capability execution:
 
 ```mermaid
 flowchart TD
-    CLI["CLI"] --> INV["Invocation"]
+    CLI["CLI input"] --> INV["Invocation"]
     INV --> CTX["ExecutionContext"]
     CTX --> PLAN["ExecutionPlan"]
-    PLAN --> RUNTIME["Agnara Runtime"]
-    RUNTIME --> CAP["task_intelligence.analyze_task"]
+    PLAN --> CAP["task_intelligence.analyze_task"]
     CAP --> RESULT["TaskAnalysis"]
     RESULT --> OUTCOME["Success / Failure"]
 ```
@@ -114,11 +113,14 @@ Message: expected str, got int
 7. **Success / Failure**: A canonical result is returned.
 
 ## Historical scope
-This repository intentionally preserves the Agnara 0.1.0a2 core execution baseline.
 
-Its scope is limited to capability registration, schema inference, execution plans, invocation, validation, metadata, scopes, risk, and canonical Success/Failure results.
+This repository intentionally preserves the Agnara `0.1.0a2` core execution baseline.
+
+Its scope is limited to capability registration, schema inference, execution plans, canonical invocation, native input validation, metadata, scopes, risk, and `Success`/`Failure` outcomes.
 
 More advanced Agnara concepts are demonstrated in subsequent Historical Reference Applications as the framework evolves.
+
+This repository is intentionally kept focused rather than continuously upgraded to newer Agnara capabilities.
 
 ## Documentation
 - [Architecture](docs/architecture.md)
