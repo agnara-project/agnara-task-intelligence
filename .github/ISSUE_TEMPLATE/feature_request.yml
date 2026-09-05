@@ -1,0 +1,42 @@
+name: Feature Request
+description: Suggest an idea for this historical application
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remember that this is a historical reference application.
+        We do NOT accept features that would break its historical significance or introduce unnecessary complexity (e.g., adding HTTP servers, ORMs).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-capability
+    attributes:
+      label: Proposed Capability or Use Case
+      description: Describe the solution you'd like.
+    validations:
+      required: true
+  - type: textarea
+    id: why-it-belongs
+    attributes:
+      label: Why it belongs here
+      description: Explain why this feature belongs in the historical reference application.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Alternatives Considered
+  - type: textarea
+    id: historical-impact
+    attributes:
+      label: Impact on Historical Nature
+      description: Does this change alter the fact that this app demonstrates the early capabilities of Agnara 0.1.0a2?
+    validations:
+      required: true
