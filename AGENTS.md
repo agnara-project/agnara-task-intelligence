@@ -24,7 +24,8 @@ When making decisions, rely on the following hierarchy of authority:
 - Do NOT introduce frameworks to replace what Agnara already demonstrates.
 
 ## Agnara Compatibility
-- Use `agnara==0.1.0a2`.
+- Do not upgrade the Agnara dependency or migrate this repository to newer Agnara APIs as part of ordinary maintenance.
+- This repository intentionally preserves the `agnara==0.1.0a2` historical baseline. A baseline migration requires an explicit historical-maintenance decision.
 - Do not use features from the `main` branch of the Agnara repository if they do not exist in the pinned version.
 
 ## Testing & Quality Gates
