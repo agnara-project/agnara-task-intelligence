@@ -113,10 +113,12 @@ Message: expected str, got int
 6. **Capability**: The logic is executed.
 7. **Success / Failure**: A canonical result is returned.
 
-## Roadmap
-This repository intentionally remains focused on the Agnara 0.1.0a2 core execution baseline.
+## Historical scope
+This repository intentionally preserves the Agnara 0.1.0a2 core execution baseline.
 
-More advanced concepts are demonstrated by subsequent Historical Reference Applications as the Agnara ecosystem evolves.
+Its scope is limited to capability registration, schema inference, execution plans, invocation, validation, metadata, scopes, risk, and canonical Success/Failure results.
+
+More advanced Agnara concepts are demonstrated in subsequent Historical Reference Applications as the framework evolves.
 
 ## Documentation
 - [Architecture](docs/architecture.md)
