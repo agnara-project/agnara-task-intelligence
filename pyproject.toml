@@ -10,10 +10,10 @@ readme = "README.md"
 requires-python = ">=3.14"
 license = { text = "Apache-2.0" }
 authors = [
-    { name = "Blandskron", email = "blandskron@example.com" }
+    { name = "Blandskron" }
 ]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: Apache Software License",
     "Programming Language :: Python :: 3.14",
@@ -23,7 +23,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Blandskron/agnara-task-intelligence"
+Homepage = "https://github.com/agnara-project/agnara-task-intelligence"
+Repository = "https://github.com/agnara-project/agnara-task-intelligence"
+Issues = "https://github.com/agnara-project/agnara-task-intelligence/issues"
+Agnara = "https://github.com/Blandskron/agnara"
 
 [dependency-groups]
 dev = [

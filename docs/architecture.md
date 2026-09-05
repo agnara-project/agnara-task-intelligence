@@ -9,18 +9,18 @@ The current CLI is simply the human entry point. It is not the core of the appli
 ### Data Flow
 
 ```mermaid
-graph TD
-    User([User]) --> CLI(CLI / app.py main)
-    CLI --> Invocation(Agnara Invocation)
-    Invocation --> ExecutionContext(Execution Context)
-    ExecutionContext --> ExecutionPlan(Compiled Execution Plan)
-    ExecutionPlan --> AgnaraRuntime(Agnara Runtime)
-    AgnaraRuntime --> Capability(task_intelligence.analyze_task)
-    Capability --> TaskAnalysis(TaskAnalysis)
-    TaskAnalysis --> AgnaraRuntime
-    AgnaraRuntime --> Result(Canonical Result: Success / Failure)
-    Result --> CLI
-    CLI --> User
+flowchart TD
+    USER(["User"]) --> CLI["CLI / app.py main"]
+    CLI --> INV["Agnara Invocation"]
+    INV --> CTX["Execution Context"]
+    CTX --> PLAN["Compiled Execution Plan"]
+    PLAN --> RUNTIME["Agnara Runtime"]
+    RUNTIME --> CAP["task_intelligence.analyze_task"]
+    CAP --> ANALYSIS["TaskAnalysis"]
+    ANALYSIS --> RUNTIME
+    RUNTIME --> RESULT["Canonical Result: Success / Failure"]
+    RESULT --> CLI
+    CLI --> USER
 ```
 
 ## Why This Matters

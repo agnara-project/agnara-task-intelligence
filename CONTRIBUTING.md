@@ -1,6 +1,6 @@
 # Contributing to Agnara Task Intelligence
 
-Thank you for your interest in contributing! This project is the first historical reference application for Agnara, designed to showcase the framework as it existed in version `0.1.0a2`.
+Thank you for your interest in contributing! This project is Historical Reference Application #001 in the Agnara reference series, designed to showcase the framework as it existed in version `0.1.0a2`.
 
 ## Historical Context
 Please understand that this project is intentionally constrained to demonstrate the early capabilities of Agnara. We will not accept PRs that introduce frameworks or architectures that bypass Agnara, or that depend on Agnara features released after `0.1.0a2`.
@@ -34,7 +34,7 @@ Before submitting a PR, ensure the following pass:
 ```bash
 ruff format --check .
 ruff check .
-pytest tests/
+python -m pytest tests/
 python -c "import app"  # Smoke test
 ```
 

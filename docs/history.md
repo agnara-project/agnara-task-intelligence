@@ -2,8 +2,7 @@
 
 This document preserves the context of this project's creation.
 
-**Agnara Task Intelligence** is the first historical reference application built externally with Agnara from its public PyPI distribution. It serves to demonstrate the framework's core concepts as they existed early in its lifecycle.
-
+**Agnara Task Intelligence** is Historical Reference Application #001 in the Agnara reference series. It preserves a reproducible example of building against the public `agnara==0.1.0a2` PyPI release. It serves to demonstrate the framework's core concepts as they existed early in its lifecycle.
 ## Environment & Dependencies
 - **Framework:** Agnara
 - **Agnara Version:** `0.1.0a2`

@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2026-09-05
 
 ### Added
-- Initial project creation as the first historical reference application for Agnara.
+- Initial project creation as Historical Reference Application #001 in the Agnara reference series.
 - `task_intelligence.analyze_task` capability.
 - Schema inference from Python type hints.
 - Canonical execution using `invoke_result`, `Success`, and `Failure`.

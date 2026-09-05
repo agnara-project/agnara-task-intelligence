@@ -1,7 +1,7 @@
 # Agent Guidelines
 
 ## Mission
-This repository is the first historical reference application built externally with Agnara from its public PyPI distribution. It must remain a clean, professional, and reproducible demonstration of Agnara's early capabilities.
+This repository is Historical Reference Application #001 in the Agnara reference series. It must remain a clean, professional, and reproducible demonstration of Agnara's early capabilities.
 
 ## Historical Constraint
 Agents must preserve the historical context of this project. Do not upgrade Agnara to use features that were not present in `0.1.0a2`. Do not introduce large, external frameworks (like FastAPI) unless explicitly required for a non-framework capability. 
@@ -30,7 +30,7 @@ When making decisions, rely on the following hierarchy of authority:
 ## Testing & Quality Gates
 Before finishing your work, you MUST ensure:
 - Format and Lint pass (`ruff format --check .` and `ruff check .`)
-- Tests pass (`pytest tests/`)
+- Tests pass (`python -m pytest tests/`)
 - Smoke tests pass
 - `git diff` and `git status` are reviewed.
 

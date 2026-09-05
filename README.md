@@ -1,15 +1,27 @@
 # Agnara Task Intelligence
 
-**Agnara Task Intelligence — Historical Reference Application #001**
+Historical Reference Application #001
+
+Agnara: 0.1.0a2
+Python: 3.14+
+Interface: CLI
+Focus: Capabilities + Validation + Canonical Execution
 
 A small, intentionally simple application that preserves and demonstrates the capabilities available in the early public releases of the Agnara framework.
 
 ## Historical Significance
-This project is the first historical reference application built externally with Agnara from its public PyPI distribution. It serves as a functional application, an educational project, an agent-first repository, and a historical baseline for observing the evolution of Agnara.
-
-It uses:
-- **Agnara version**: `0.1.0a2`
-- **Python baseline**: `3.14+`
+Agnara Task Intelligence is Historical Reference Application #001 in the Agnara reference series. It preserves a reproducible example of building against the public `agnara==0.1.0a2` PyPI release.
+```text
+Historical Reference Application: #001
+Application: Agnara Task Intelligence
+Application version: 0.1.0
+Agnara version: 0.1.0a2
+Python requirement: >=3.14
+Initially validated with: CPython 3.14.4
+Agnara source: PyPI
+Primary capability: task_intelligence.analyze_task
+Primary interface: CLI
+```
 
 ## What This Demonstrates
 This reference application demonstrates the following core Agnara capabilities:
@@ -25,14 +37,14 @@ This reference application demonstrates the following core Agnara capabilities:
 The application separates the human interface (CLI) from the business logic via the Agnara Runtime:
 
 ```mermaid
-graph TD
-    CLI(CLI) --> Invocation(Invocation)
-    Invocation --> ExecutionContext(Execution Context)
-    ExecutionContext --> ExecutionPlan(Execution Plan)
-    ExecutionPlan --> AgnaraRuntime(Agnara Runtime)
-    AgnaraRuntime --> Capability(task_intelligence.analyze_task)
-    Capability --> TaskAnalysis(TaskAnalysis)
-    TaskAnalysis --> SuccessFailure(Success / Failure)
+flowchart TD
+    CLI["CLI"] --> INV["Invocation"]
+    INV --> CTX["ExecutionContext"]
+    CTX --> PLAN["ExecutionPlan"]
+    PLAN --> RUNTIME["Agnara Runtime"]
+    RUNTIME --> CAP["task_intelligence.analyze_task"]
+    CAP --> RESULT["TaskAnalysis"]
+    RESULT --> OUTCOME["Success / Failure"]
 ```
 
 ## Current Limitations
@@ -46,12 +58,14 @@ This project explicitly reflects the scope of Agnara `0.1.0a2`. It **does not** 
 
 On Windows, ensuring you use the correct Python version (since multiple versions might exist):
 
-```bash
+```bat
 py -3.14 --version
 py -3.14 -m venv .venv
 .venv\Scripts\activate
+python --version
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+python app.py
 ```
 
 On Linux/macOS:
@@ -100,10 +114,9 @@ Message: expected str, got int
 7. **Success / Failure**: A canonical result is returned.
 
 ## Roadmap
-- `v0` — single capability (Current)
-- `v1` — multiple capabilities
-- `v2` — dependency injection
-- `v3` — additional Agnara adapters when publicly available
+This repository intentionally remains focused on the Agnara 0.1.0a2 core execution baseline.
+
+More advanced concepts are demonstrated by subsequent Historical Reference Applications as the Agnara ecosystem evolves.
 
 ## Documentation
 - [Architecture](docs/architecture.md)
